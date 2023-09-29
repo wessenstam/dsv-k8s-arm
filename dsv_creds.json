@@ -1,0 +1,9 @@
+{
+  "default": {
+    "credentials": {
+    	"clientId": "e4b226fb-8aa8-4b20-a618-19f43e7a6077",
+	"clientSecret": "MLqOpCJUEPguSMjLPLkJ8NNW5_tgcIgUwLRj3V5SO1g"
+    },
+    "tenant": "delinealabs"
+  }
+}
