@@ -94,7 +94,7 @@ This will pull/sync the secret with respect to the field
 - password
 - user
 
-If the field in the YAML file does not exist, it will be delete from the secret. This way it is possible to avoid empty fields. Any fields that are now mentioned in the YAML file, will be added to the secret.
+If the field in the YAML file does not exist, it will be delete from the secret. This way it is possible to avoid empty fields. Any fields that are not mentioned in the YAML file, will be added to the secret.
 
 #### Checking the secret
 
