@@ -6,8 +6,9 @@ To make the DSV Injector and DSV Syncher work some work has to be performed.
 
 
 ### Credentials for DSV
-The file that holds the DSV credentials (Client_Id, Client_Secure_Id and tenant name) needs to be created. An example is shown below:
+The file that holds the DSV credentials (Client_Id, Client_Secure_Id, tenant name and possible Top Level Domain (TLD)) needs to be created. An example is shown below:
 
+#### For the US A tenant of DSV (.com)
 ```json
 {
   "default": {
@@ -16,6 +17,20 @@ The file that holds the DSV credentials (Client_Id, Client_Secure_Id and tenant 
 	"clientSecret": "<CLIENT_SECRET_ID"
     },
     "tenant": "<TENANT>"
+  }
+}
+```
+
+#### For all other domains (tld=EU,COM.AU,CA)
+```json
+{
+  "default": {
+    "credentials": {
+    	"clientId": "<CLIENT_ID>",
+	"clientSecret": "<CLIENT_SECRET_ID"
+    },
+    "tenant": "<TENANT>",
+    "tld":"<TLD DOMAIN>"
   }
 }
 ```
