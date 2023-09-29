@@ -2,7 +2,7 @@
  ARM version of the two DSV parts (Injector and Syncer) for native K8s integration.
 
 ## Usage
-To make the DSV Injector and DSV Syncher work some files have to be created.
+To make the DSV Injector and DSV Syncher work some work has to be performed.
 
 
 ### Credentials for DSV
@@ -21,12 +21,13 @@ The file that holds the DSV credentials (Client_Id, Client_Secure_Id and tenant 
 ```
 
 ### Manipulation of the DSV Injector and DSV Syncer
-The below variables can be used to change the Namespace as well as the version of the image that needs to be pulled
+The below variables can be used to change the namespace, the json file that holds the credentials for DSV, what image to use and the version (IMAGE_TAG) of the image that needs to be pulled. The last variable is needed to start the two parts as the original container image is pointing to **/app/** to start the parts.
+
 ```bash
 NAMESPACE='testing'
 CREDENTIALS_JSON_FILE='dsv_creds.json'
 IMAGE_REPOSITORY='docker.io/wessenstam/dsv'
-IMAGE_TAG='1.0'
+IMAGE_TAG='latest'
 IMAGE_ENTRYPOINT='/usr/bin/'
 ```
 
